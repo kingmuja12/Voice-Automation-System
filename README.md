@@ -47,8 +47,8 @@ The system has undergone extensive testing to ensure its stability and reliabili
 
 ## Contributors
 
-- [Your Name] - [Your Role/Contribution]
-- [Collaborator Name] - [Their Role/Contribution]
+- Abdulwaheed Abdulmujeeb - Developed voice_control.py and Authentication.py.
+- Mohammed Saad Shaikh - Organized the codebase and created GUI.py.
 
   
 Feel free to explore the repository and contribute to enhancing the Voice Automation System! If you have any questions or suggestions, please don't hesitate to reach out.
