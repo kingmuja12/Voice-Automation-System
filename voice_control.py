@@ -34,7 +34,7 @@ def capture_and_transcribe(listen_duration=4):
                     rate=rate,
                     input=True,
                     frames_per_buffer=frames_per_buffer)
-    print('I am listening')
+    
     log_to_file_and_speak('I am listening')
     stream.start_stream()
 
@@ -68,28 +68,28 @@ def voice_command():
     command = command[14:-3]
 
     if command:
-        print("Transcription:", command)
+        print("Transcription:", command) ### make changes to this tomorrow 
 
-        if command == "turn on the lights":
+        if ( "on"in command ) and ("ligth" in command) :
             digital_write(4, True)
             oled_clear()
             oled_print('The light is on!')
             log_to_file_and_speak('The light is on!')
 
-        elif command == "turn off the lights":
+        elif ( "off"in command ) and ("ligth" in command):
             digital_write(4, False)
             oled_clear()
             oled_print('The light is off!')
             log_to_file_and_speak('The light is off!')
 
-        elif command == "what is the temperature":
+        elif "temperature" in command:
             temp = pressure_get_temp()
             oled_clear()
             oled_print(f'Current temp: \n {temp} C')
             log_to_file_and_speak(f'The current temperature is: {temp} Celsious')
 
 
-        elif command == "on":
+        elif "Autonomous" in command:
             temp = pressure_get_temp()
             log_to_file_and_speak('Ok')
             light1 = (analog_read(6))
