@@ -68,7 +68,7 @@ def voice_command():
     command = command[14:-3]
 
     if command:
-        print("Transcription:", command) ### make changes to this tomorrow 
+        print(f"You said: {command}")  
 
         if ( "on"in command ) and ("ligth" in command) :
             digital_write(4, True)
