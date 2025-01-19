@@ -27,10 +27,10 @@
 #     speak_message(message)
 
 
-def speak_message(message):
-    engine = pyttsx3.init()
-    engine.say(message)
-    engine.runAndWait()
+# def speak_message(message):
+#     engine = pyttsx3.init()
+#     engine.say(message)
+#     engine.runAndWait()
 
 
 def authenticate_user(name, password, history):
