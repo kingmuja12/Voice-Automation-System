@@ -33,8 +33,8 @@
 #     engine.runAndWait()
 
 
-def authenticate_user(name, password, history):
-    hashed_password = hash_password(password)
+# def authenticate_user(name, password, history):
+#     hashed_password = hash_password(password)
 
     if name in history:
         if history[name] == hashed_password:
