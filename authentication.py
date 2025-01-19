@@ -36,12 +36,12 @@
 # def authenticate_user(name, password, history):
 #     hashed_password = hash_password(password)
 
-    if name in history:
-        if history[name] == hashed_password:
-            return "Hello " + name
-        else:
-            return "Incorrect password."
-    else:
-        history[name] = hashed_password
-        save_file(history)
-        return f"New user added, welcome !!! {name}"
+    # if name in history:
+    #     if history[name] == hashed_password:
+    #         return "Hello " + name
+    #     else:
+    #         return "Incorrect password."
+    # else:
+    #     history[name] = hashed_password
+    #     save_file(history)
+    #     return f"New user added, welcome !!! {name}"
