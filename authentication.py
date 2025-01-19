@@ -7,12 +7,12 @@
 #     return hashlib.sha256(password.encode('utf-8')).hexdigest()
 
 
-def load_file():
-    try:
-        with open('user_history.json', 'r') as file:
-            return json.load(file)
-    except FileNotFoundError:
-        return {}
+# def load_file():
+#     try:
+#         with open('user_history.json', 'r') as file:
+#             return json.load(file)
+#     except FileNotFoundError:
+#         return {}
 
 
 def save_file(history):
