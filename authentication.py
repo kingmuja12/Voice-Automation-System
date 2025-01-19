@@ -15,9 +15,9 @@
 #         return {}
 
 
-def save_file(history):
-    with open('user_history.json', 'w') as file:
-        json.dump(history, file)
+# def save_file(history):
+#     with open('user_history.json', 'w') as file:
+#         json.dump(history, file)
 
 
 def log_to_file_and_speak(message):
