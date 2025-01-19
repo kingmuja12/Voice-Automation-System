@@ -20,11 +20,11 @@
 #         json.dump(history, file)
 
 
-def log_to_file_and_speak(message):
-    with open('log.txt', 'a') as file:
-        file.write(message + '\n')
-    print(message)  # Optional: if you still want to print to console
-    speak_message(message)
+# def log_to_file_and_speak(message):
+#     with open('log.txt', 'a') as file:
+#         file.write(message + '\n')
+#     print(message)  # Optional: if you still want to print to console
+#     speak_message(message)
 
 
 def speak_message(message):
